@@ -1,15 +1,16 @@
 import mongoose from 'mongoose';
+import md5 from 'md5';
 
 const schema = new mongoose.Schema(
   {
-    name: 'string',
-    lname: 'string',
-    bdate: 'date',
-    phone: 'string',
-    email: 'string',
-    password: 'string',
+    name: String,
+    lname: String,
+    bdate: Date,
+    phone: String,
+    email: String,
+    password: String,
     role: {
-      type: 'string',
+      type: String,
       default: null,
     },
   },
