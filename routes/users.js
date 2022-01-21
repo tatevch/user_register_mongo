@@ -8,4 +8,8 @@ router.get('/list',UsersController.getAllUsers);
 router.put('/user-update',UsersController.updateUser);
 router.put('/many-users-update',UsersController.updateManyUsers);
 router.delete('/user-delete',UsersController.userDelete);
-export default router;
+//router.get('/get-user-role',UsersController.userChangeRole);
+router.get('/users-list',UsersController.userSortByName);
+router.get('/users-list1',UsersController.getByName);
+
+export default router

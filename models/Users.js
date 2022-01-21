@@ -9,10 +9,7 @@ const schema = new mongoose.Schema(
     phone: String,
     email: String,
     password: String,
-    role: {
-      type: String,
-      default: null,
-    },
+    role: String
   },
   {
     timestamps: true,
